@@ -33,6 +33,7 @@ window.onload = () => {
   // This is low-level API, that you can use to react to tentative events.
   client.onTentativeIntent((cid, sid, intent) =>
     logResponse("tentative_intent", cid, sid, { intent })
+    alert("tentative_intent", cid, sid, { intent })
   );
   client.onTentativeEntities((cid, sid, entities) =>
     logResponse("tentative_entities", cid, sid, { entities })
